@@ -140,9 +140,11 @@
 }
 
 .sidebar-logo {
+  transform: scale(0.3);
   position: absolute;
-  right: 0;
-  bottom: 18px;
+  //right: 0;
+  //bottom: 18px;
+  margin: -15vh 0vh 0vh 5vh;
 }
 
 .sidebar-title {

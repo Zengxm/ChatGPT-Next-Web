@@ -7,15 +7,16 @@ const cn = {
   WIP: "该功能仍在开发中……",
   Error: {
     Unauthorized: isApp
-      ? "检测到无效 API Key，请前往[设置](/#/settings)页检查 API Key 是否配置正确。"
-      : "访问密码不正确或为空，请前往[登录](/#/auth)页输入正确的访问密码，或者在[设置](/#/settings)页填入你自己的 OpenAI API Key。",
+      ? // ? "检测到无效 API Key，请前往[设置](/#/settings)页检查 API Key 是否配置正确。"
+        "Oops！不好使的时候联系我哦～"
+      : "Oops！没有暗号不好使哦～（[输入暗号](/#/auth)）",
   },
   Auth: {
-    Title: "需要密码",
-    Tips: "管理员开启了密码验证，请在下方填入访问码",
+    Title: "AI小助手",
+    Tips: "",
     SubTips: "或者输入你的 OpenAI API 密钥",
-    Input: "在此处填写访问码",
-    Confirm: "确认",
+    Input: "请输入暗号",
+    Confirm: "确定",
     Later: "稍后再说",
   },
   ChatItem: {
@@ -45,7 +46,7 @@ const cn = {
     },
     Commands: {
       new: "新建聊天",
-      newm: "从面具新建聊天",
+      //newm: "从面具新建聊天",
       next: "下一个聊天",
       prev: "上一个聊天",
       clear: "清除上下文",
@@ -342,7 +343,7 @@ const cn = {
   },
   Store: {
     DefaultTopic: "新的聊天",
-    BotHello: "有什么可以帮你的吗",
+    BotHello: "有什么可以帮田田的吗",
     Error: "出错了，稍后重试吧",
     Prompt: {
       History: (content: string) => "这是历史聊天总结作为前情提要：" + content,
@@ -441,9 +442,9 @@ const cn = {
     Config: "配置",
   },
   Exporter: {
-    Description : {
-      Title: "只有清除上下文之后的消息会被展示"
-    },  
+    Description: {
+      Title: "只有清除上下文之后的消息会被展示",
+    },
     Model: "模型",
     Messages: "消息",
     Topic: "主题",

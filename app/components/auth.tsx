@@ -32,12 +32,11 @@ export function AuthPage() {
 
   return (
     <div className={styles["auth-page"]}>
-      <div className={`no-dark ${styles["auth-logo"]}`}>
-        <BotIcon />
-      </div>
-
+      {/*<div className={`no-dark ${styles["auth-logo"]}`}>*/}
+      {/*  <BotIcon />*/}
+      {/*</div>*/}
       <div className={styles["auth-title"]}>{Locale.Auth.Title}</div>
-      <div className={styles["auth-tips"]}>{Locale.Auth.Tips}</div>
+      {/*<div className={styles["auth-tips"]}>{Locale.Auth.Tips}</div>*/}
 
       <input
         className={styles["auth-input"]}
@@ -50,22 +49,22 @@ export function AuthPage() {
           );
         }}
       />
-      {!accessStore.hideUserApiKey ? (
-        <>
-          <div className={styles["auth-tips"]}>{Locale.Auth.SubTips}</div>
-          <input
-            className={styles["auth-input"]}
-            type="password"
-            placeholder={Locale.Settings.Access.OpenAI.ApiKey.Placeholder}
-            value={accessStore.openaiApiKey}
-            onChange={(e) => {
-              accessStore.update(
-                (access) => (access.openaiApiKey = e.currentTarget.value),
-              );
-            }}
-          />
-        </>
-      ) : null}
+      {/*{!accessStore.hideUserApiKey ? (*/}
+      {/*  <>*/}
+      {/*    <div className={styles["auth-tips"]}>{Locale.Auth.SubTips}</div>*/}
+      {/*    <input*/}
+      {/*      className={styles["auth-input"]}*/}
+      {/*      type="password"*/}
+      {/*      placeholder={Locale.Settings.Access.OpenAI.ApiKey.Placeholder}*/}
+      {/*      value={accessStore.openaiApiKey}*/}
+      {/*      onChange={(e) => {*/}
+      {/*        accessStore.update(*/}
+      {/*          (access) => (access.openaiApiKey = e.currentTarget.value),*/}
+      {/*        );*/}
+      {/*      }}*/}
+      {/*    />*/}
+      {/*  </>*/}
+      {/*) : null}*/}
 
       <div className={styles["auth-actions"]}>
         <IconButton
@@ -73,13 +72,13 @@ export function AuthPage() {
           type="primary"
           onClick={goChat}
         />
-        <IconButton
-          text={Locale.Auth.Later}
-          onClick={() => {
-            resetAccessCode();
-            goHome();
-          }}
-        />
+        {/*<IconButton*/}
+        {/*  text={Locale.Auth.Later}*/}
+        {/*  onClick={() => {*/}
+        {/*    resetAccessCode();*/}
+        {/*    goHome();*/}
+        {/*  }}*/}
+        {/*/>*/}
       </div>
     </div>
   );
