@@ -1170,9 +1170,11 @@ function _Chat() {
                       {/*  ></IconButton>*/}
                       {/*</div>*/}
                       {isUser ? (
-                        <Avatar avatar={config.avatar} />
+                        //<Avatar avatar={config.avatar} />
+                        <MaskIcon />
                       ) : (
-                        <Avatar avatar="1f914" />
+                        <RobotIcon />
+                        //<Avatar avatar="1f914" />
                         // <>
                         //   {["system"].includes(message.role) ? (
                         //     <Avatar avatar="2699-fe0f" />
