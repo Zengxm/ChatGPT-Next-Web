@@ -46,7 +46,7 @@ const pt: PartialLocaleType = {
     },
     Commands: {
       new: "Iniciar um novo chat",
-      newm: "Iniciar um novo chat com máscara",
+      //newm: "Iniciar um novo chat com máscara",
       next: "Próximo Chat",
       prev: "Chat Anterior",
       clear: "Limpar Contexto",
