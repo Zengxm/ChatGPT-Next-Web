@@ -154,16 +154,16 @@ export function SideBar(props: { className?: string }) {
         transition: isMobileScreen && isIOSMobile ? "none" : undefined,
       }}
     >
-      <div className={styles["sidebar-header"]} data-tauri-drag-region>
-        <div className={styles["sidebar-title"]} data-tauri-drag-region>
-          AI小助手
-        </div>
-        <div className={styles["sidebar-sub-title"]}>田田专属版</div>
-        <div className={styles["sidebar-logo"] + " no-dark"}>
-          {/*<ChatGptIcon />*/}
-          <TianIcon />
-        </div>
+      {/*<div className={styles["sidebar-header"]} data-tauri-drag-region>*/}
+      {/*<div className={styles["sidebar-title"]} data-tauri-drag-region>*/}
+      {/*  //AI小助手*/}
+      {/*</div>*/}
+      {/*<div className={styles["sidebar-sub-title"]}>田田专属版</div>*/}
+      <div className={styles["sidebar-logo"] + " no-dark"}>
+        {/*<ChatGptIcon />*/}
+        <TianIcon />
       </div>
+      {/*</div>*/}
 
       {/*<div className={styles["sidebar-header-bar"]}>*/}
       {/*  <IconButton*/}
