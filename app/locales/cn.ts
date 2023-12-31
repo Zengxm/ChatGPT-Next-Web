@@ -12,7 +12,7 @@ const cn = {
       : "Oops！没有暗号不好使哦～（[输入暗号](/#/auth)）",
   },
   Auth: {
-    Title: "AI小助手",
+    Title: "田田的小助手",
     Tips: "",
     SubTips: "或者输入你的 OpenAI API 密钥",
     Input: "请输入暗号",
